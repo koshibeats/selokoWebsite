@@ -1,35 +1,62 @@
-.App{
+.header{
   display:flex;
-  
+  justify-content:center;
 }
 
 .wrapper{
     display:flex;
-    background-color:transparent;
     
-    width:1000px;
+    justify-content: center;
+    width:100%;
+    
     
   
   }
   .left{
+    display:flex;
     
-    display:block;
-    width: 200px;
-    background-color:grey;
-    
+    width: 150px;
+    padding:0;
+    margin:0;
     
   }
+  .list {
+    display:flex;
+    flex-direction:column;
+    list-style:none;
+    text-align:right;
+    margin:0;
+    padding:0;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    width:150px;
+  }
+
+  .listElement:hover { 
+    color:gold;
+    transition:0.2s ease;
+  }
+
+  
   .middle {
     display:flex;
     background-color:rgb(255, 0, 0);
-    width:600px;
+    width:1000px;
+    height:1000px;
     
-    
-    
+   
+
   }
   
   .logo {
     width:200px;
-    height:200px;
+    
+
   }
   
+
+  @media (width:500px){
+    .wrapper{
+      flex-wrap:wrap;
+    }
+  }

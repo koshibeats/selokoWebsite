@@ -3,12 +3,16 @@ import css from './mainSite.module.scss';
 
 function mainSite(){
     return (
-        <div className="App">
+        <div className={css.App}>
+            <div className = {css.header}>
             <img src = "logo.png" className = {css.logo}></img>
-            <div className = {css.wrapper}>
-            <div className = {css.left}>
             </div>
+            <div className = {css.wrapper}>
+              
+            
+            
             <div className = {css.middle}>
+            
             </div>
           </div>
         </div>
