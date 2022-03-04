@@ -50,10 +50,16 @@
   
   .logo {
     width:200px;
-    
+
 
   }
+  .decoration{
+    width:150px;
+  }
   
+  .right {
+   transform:rotate(90deg);
+  }
 
   @media (width:500px){
     .wrapper{
