@@ -6,7 +6,9 @@ function mainSite(){
     return (
         <div className={css.App}>
             <div className = {css.header}>
-            <img src = "logo.png" className = {css.logo}></img>
+            <img className = "logo" src="logo.png"></img>
+            
+            
             </div>
             <div className = {css.wrapper}>
             <div className = {css.left}>
@@ -17,16 +19,21 @@ function mainSite(){
             <li className = {css.listElement}>HATS</li>
             <li className = {css.listElement}>BAGS</li>
             <li className = {css.listElement}>ACCESORIES</li>
+            <li className = {css.listElement}>SKATEBOARDING</li>
+            <li className = {css.listElement}>SHOES</li>
+            <li className = {css.listElement}>STICKERS</li>
             <li className = {css.listElement}>HARDWARE</li>
+
             </ul>
             </div>
             
             
             <div className = {css.middle}>
-            
+            <div className = {css.product}>
+            </div>
             </div>
             <div className = {css.decoration}>
-            <img src = "snake.png" className = {css.right} ></img>
+            
               </div>
           </div>
         </div>

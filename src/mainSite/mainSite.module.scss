@@ -1,6 +1,9 @@
 .header{
   display:flex;
+  flex-direction: row;
   justify-content:center;
+  height:250epx;
+  width:100%;
 }
 
 .wrapper{
@@ -12,6 +15,15 @@
     
   
   }
+
+.logo
+{
+  margin:0;
+  padding:0;
+  font-size: 30px;
+  font-family: 'Amatic SC', sans-serif;
+}
+
   .left{
     display:flex;
     
@@ -27,20 +39,20 @@
     text-align:right;
     margin:0;
     padding:0;
-    font-family: 'Rubik', sans-serif;
-    font-size:20px;
+    font-family: 'rubik', sans-serif;
+    font-size:15px;
     width:150px;
   }
 
   .listElement:hover { 
-    color:gold;
+    color:#8f24aa;
     transition:0.2s ease;
   }
 
   
   .middle {
     display:flex;
-    background-color:rgb(255, 0, 0);
+    background-color:rgb(255, 255, 255);
     width:1000px;
     height:1000px;
     
@@ -49,20 +61,35 @@
   }
   
   .logo {
-    width:200px;
-
+    height:200px;
+    width:100px;
 
   }
   .decoration{
     width:150px;
+    padding:0;
+    margin:0;
   }
   
   .right {
    transform:rotate(90deg);
+   width:1000px;
+   height:200px;
+   padding:0;
+   margin:0;
   }
 
-  @media (width:500px){
+  .product{
+    width:150px;
+    height:150px;
+    background-color:black;
+  }
+
+  @media (width:700px){
     .wrapper{
       flex-wrap:wrap;
+    }
+    .list {
+      display:none;
     }
   }
