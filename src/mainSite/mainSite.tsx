@@ -1,8 +1,18 @@
 import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 import React from 'react';
 import css from './mainSite.module.scss';
+import {Clothes} from "./clothes";
+import { parseConfigFileTextToJson } from 'typescript';
 
-function mainSite(){
+
+
+interface Args {
+  clothes : Clothes[];
+}
+
+
+
+function mainSite({clothes} : Args){
     return (
         <div className={css.App}>
             <div className = {css.header}>
@@ -29,8 +39,18 @@ function mainSite(){
             
             
             <div className = {css.middle}>
-            <div className = {css.product}>
-            </div>
+            
+              
+                {clothes.map((clothing) => (
+
+                <div className = {css.product}>
+                  {clothing.type}
+                  {clothing.color}
+                  
+                </div>
+                
+                ))}
+            
             </div>
             <div className = {css.decoration}>
             
@@ -39,6 +59,5 @@ function mainSite(){
         </div>
       );
 }
-
 
 export default mainSite;
