@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import clothes from '../public/clothes.json';
+import clothes from './clothes.json';
 
 import MainSite from './mainSite/mainSite';
 

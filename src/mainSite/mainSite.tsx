@@ -45,7 +45,7 @@ function mainSite({clothes} : Args){
 
                 <div className = {css.product}>
                   {clothing.type}
-                  {clothing.color}
+                  
                   
                 </div>
                 
