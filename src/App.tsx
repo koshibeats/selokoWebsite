@@ -1,13 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
-import clothes from './clothes.json';
+import clothes from './mainSiteComponents/clothes.json'
+import MainSite from './mainSiteComponents/mainSite'
 
-import MainSite from './mainSite/mainSite';
+
+import {
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
 
 function App() {
   return (
+
     <div className="App">
-      <MainSite clothes={clothes}></MainSite>
+      <Routes>
+      <MainSite></MainSite>
+      </Routes>
     </div>
   );
 }
