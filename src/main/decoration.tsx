@@ -7,9 +7,9 @@ import { BrowserRouter as Router, Route, Link, useParams } from 'react-router-do
 
 function decoration() {
 	return (
-		<div className="App">
+		
 			<div className={css.decoration} />
-		</div>
+		
 	);
 }
 

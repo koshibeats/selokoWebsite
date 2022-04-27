@@ -3,39 +3,28 @@ import React from 'react';
 import css from './mainSite.module.scss';
 import {Clothes} from "./clothes";
 
-import Header from './header'
+
 import Left from './left'
 import Products from './products'
-import Decoration from './decoration'
+
+interface Args {
+	clothes: Clothes[];
+}
 
 
 
-function mainSite(){
+function mainSite({ clothes }: Args){
     return (
-        <div className={css.App}>
-            <div className = {css.header}>
-            <Header></Header>
-            
-            
-            </div>
-            <div className = {css.wrapper}>
-            <div className = {css.left}>
-            <Left></Left>
-            
-            </div>
-            
-            
+        
             <div className = {css.middle}>
+             
             <Products clothes={[]}></Products>
-              
+            {clothes.map((clothing) => <div className={css.product}>{clothing.type}</div>)}
                 
             
             </div>
-            <div className = {css.decoration}>
-            <Decoration></Decoration>
-              </div>
-          </div>
-        </div>
+            
+        
       );
 }
 

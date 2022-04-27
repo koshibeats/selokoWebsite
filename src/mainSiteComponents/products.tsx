@@ -12,10 +12,16 @@ interface Args {
 function products({ clothes }: Args) {
 	return (
 		<div className="App">
-			<div className={css.middle}>
-				{clothes.map((clothing) => <div className={css.product}>{clothing.type}</div>)}
-			</div>
-			<div className={css.decoration} />
+			<div className = {css.middle}>
+            
+            {clothes.map((clothing) => <div className={css.product}>{clothing.type}</div>)}
+              
+                
+            
+            
+            </div> 
+				
+			
 		</div>
 	);
 }

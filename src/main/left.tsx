@@ -9,7 +9,7 @@ function left() {
 	return (
 		
             
-                <div className = {css.left}>
+                
 					<ul className={css.list}>
 						<li className={css.listElement}>T-SHIRTS</li>
 						<li className={css.listElement}>HOODIES</li>
@@ -22,7 +22,7 @@ function left() {
 						<li className={css.listElement}>STICKERS</li>
 						<li className={css.listElement}>HARDWARE</li>
 					</ul>
-                    </div>
+                    
                     
 		
 	);
